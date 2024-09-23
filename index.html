@@ -25,6 +25,7 @@
                         clifford: '#da373d',
                         'btn-color': '#B4F461',
                         'nav-color': '#F9F7F3',
+                        'back-blur': 'blur(8px)',
                     }
                 }
             }
@@ -33,11 +34,12 @@
 </head>
 
 <body class="lexend-font">
-    <header class=" sticky top-0 z-50">
-        <nav class="container bg-nav-color mx-auto py-5 px-6">
+    <header class="bg-nav-color sticky top-0 z-50">
+        <nav class="container  mx-auto py-5 px-6">
             <div class="navbar">
                 <div class="navbar-start">
-                    <button class="btn bg-btn-color drop-shadow-none px-8 py-3 rounded-lg font-semibold text-xl leading-none text-[#111111]">
+                    <button
+                        class="btn bg-btn-color drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 px-8 py-3 rounded-lg font-semibold text-xl leading-none text-[#111111]">
                         Blog
                     </button>
                 </div>
@@ -53,17 +55,77 @@
                 </div>
             </div>
         </nav>
-        <div class="container py-8 mx-auto flex items-center justify-center">
-            <button class="btn bg-btn-color drop-shadow-none px-8 py-3 mr-2 rounded-lg font-semibold text-xl leading-none text-[#111111]">
+        <div class=" bg-white pt-10 pb-8 mx-auto flex items-center justify-center">
+            <button
+                class="btn bg-btn-color drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 px-8 py-3 mr-2 rounded-lg font-semibold text-xl leading-none text-[#111111]">
                 Donation
             </button>
-            <button class="btn bg-transparent border-[1px] border-[#111111]/30 drop-shadow-none px-8 py-3 ml-2 rounded-lg font-medium text-xl leading-none text-[#111111]/70">
+            <button
+                class="btn bg-transparent border-[1px] border-[#111111]/30 drop-shadow-none hover:bg-btn-color hover:border-btn-color hover:text-[#111111] focus:bg-btn-color focus:border-btn-color focus:text-[#111111] px-8 py-3 ml-2 rounded-lg font-medium text-xl leading-none text-[#111111]/70">
                 History
             </button>
         </div>
     </header>
     <main>
+        <section class="py-4">
+            <div class="container mx-auto flex flex-col justify-center items-center">
+                <div class="card border-[1px] flex flex-row justify-between items-center bg-base-100 w-11/12 shadow-xl">
+                    <img class="w-1/2 p-8" src="assets/noakhali.png" alt="flood" />
+                    <div class="pr-8 pl-0 card-body">
+                        <div class="flex justify-start">
 
+                        </div>
+                        <h2 class="card-title text-[#111111] text-xl font-bold leading-none">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-start">
+                            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full rounded-lg text-base font-light leading-none"/>
+                            <button
+                                class="btn bg-btn-color w-full drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 px-8 py-3 rounded-lg font-semibold text-xl leading-none text-[#111111]" onclick="my_modal_1.showModal()">
+                                Donate Now
+                            </button>
+                            <dialog id="my_modal_1" class="modal">
+                                <div class="modal-box">
+                                  <h3 class="text-lg font-bold">Hello!</h3>
+                                  <p class="py-4">Press ESC key or click the button below to close</p>
+                                  <div class="modal-action">
+                                    <form method="dialog">
+                                      <!-- if there is a button in form, it will close the modal -->
+                                      <button class="btn">Close</button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </dialog>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
