@@ -36,91 +36,107 @@
 <body class="lexend-font">
     <header class="bg-nav-color sticky top-0 z-50">
         <nav class="container  mx-auto py-5 px-6">
-            <div class="navbar">
-                <div class="navbar-start">
+            <div class="navbar justify-between">
+                <div class="hidden md:block navbar-start w-auto md:w-1/2">
                     <button
-                        class="btn bg-btn-color drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 px-8 py-3 rounded-lg font-semibold text-xl leading-none text-[#111111]">
+                        class="btn bg-btn-color drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 px-4 py-1 md:px-8 md:py-3 rounded-lg font-semibold text-sm md:text-xl md:leading-none leading-none text-[#111111]">
                         Blog
                     </button>
                 </div>
                 <div class="navbar-center">
                     <div class="flex flex-row items-center">
-                        <img class="w-12 mr-3" src="/assets/logo.png" alt="logo">
-                        <h3 class="text-[#111111] font-semibold text-xl leading-none">Donate Bangladesh</h3>
+                        <img class="w-6 md:w-12 mr-1 md:mr-3" src="/assets/logo.png" alt="logo">
+                        <h3 class="text-[#111111] font-semibold text-sm md:text-xl leading-none">Donate Bangladesh</h3>
                     </div>
                 </div>
-                <div class="navbar-end">
-                    <img src="/assets/coin.png" alt="coin">
-                    <h3 class="text-[#111111]/70 font-medium text-xl leading-none">5500 BDT</h3>
+                <div class="navbar-end w-auto md:w-1/2">
+                    <img class="w-6 md:w-auto" src="/assets/coin.png" alt="coin">
+                    <h3 class="text-[#111111]/70 font-medium text-sm md:text-xl text-left leading-none">5500 BDT</h3>
                 </div>
             </div>
         </nav>
-        <div class=" bg-white pt-10 pb-8 mx-auto flex items-center justify-center">
-            <button
-                class="btn bg-btn-color drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 px-8 py-3 mr-2 rounded-lg font-semibold text-xl leading-none text-[#111111]">
-                Donation
-            </button>
-            <button
-                class="btn bg-transparent border-[1px] border-[#111111]/30 drop-shadow-none hover:bg-btn-color hover:border-btn-color hover:text-[#111111] focus:bg-btn-color focus:border-btn-color focus:text-[#111111] px-8 py-3 ml-2 rounded-lg font-medium text-xl leading-none text-[#111111]/70">
-                History
-            </button>
-        </div>
+        
     </header>
     <main>
+        <section class="sticky z-50 top-[105px]">
+            <div class=" backdrop-blur-sm pt-10 pb-8 mx-auto flex items-center justify-center">
+                <button
+                    class="btn bg-btn-color border-[1px] border-btn-color drop-shadow-none hover:bg-transparent hover:border-[#111111]/30 hover:text-[#111111]/70 px-8 py-3 mr-2 rounded-lg font-semibold text-xl leading-none text-[#111111]">
+                    Donation
+                </button>
+                <button
+                    class="btn bg-transparent border-[1px] border-[#111111]/30 drop-shadow-none hover:bg-btn-color hover:border-btn-color hover:text-[#111111] focus:bg-btn-color focus:border-btn-color focus:text-[#111111] px-8 py-3 ml-2 rounded-lg font-medium text-xl leading-none text-[#111111]/70">
+                    History
+                </button>
+            </div>
+        </section>
         <section class="py-4">
-            <div class="container mx-auto flex flex-col justify-center items-center">
-                <div class="card border-[1px] flex flex-row justify-between items-center bg-base-100 w-11/12 shadow-xl">
-                    <img class="w-1/2 p-8" src="assets/noakhali.png" alt="flood" />
-                    <div class="pr-8 pl-0 card-body">
+            <div class="container mx-auto mb-8 flex flex-col justify-center items-center">
+                <div class="card border-[1px] flex lg:flex-row justify-between items-center bg-base-100 w-11/12">
+                    <img class="w-full lg:w-1/2 p-8" src="assets/noakhali.png" alt="flood" />
+                    <div class="lg:pr-8 lg:pl-0 px-6 pt-0 lg:pt-8 xl:gap-6 card-body">
                         <div class="flex justify-start">
-
+                            <button class="btn bg-[#111111]/500 p-3 pt-2 ">
+                                <img src="/assets/coin.png" alt="coin">
+                                <p class=" text-[#111111]/70 text-xs md:text-base font-normal ">500 BDT</p>
+                            </button>
                         </div>
-                        <h2 class="card-title text-[#111111] text-xl font-bold leading-none">Donate for Flood at Noakhali, Bangladesh</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-start">
-                            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full rounded-lg text-base font-light leading-none"/>
+                        <h2 class="card-title text-[#111111] text-base md:text-xl font-bold leading-none">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <p class="text-[#111111]/70 text-xs md:text-base font-light"> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes a difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                        <div class="card-actions justify-start xl:mt-4">
+                            <input type="text" placeholder="Write Donation Amount" class="input input-bordered py-2 w-full rounded-lg text-sm lg:text-base font-light leading-none"/>
                             <button
-                                class="btn bg-btn-color w-full drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 px-8 py-3 rounded-lg font-semibold text-xl leading-none text-[#111111]" onclick="my_modal_1.showModal()">
+                                class="btn bg-btn-color py-2 mt-1 w-full drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 rounded-lg font-semibold text-sm md:text-xl leading-none text-[#111111]" >
                                 Donate Now
                             </button>
-                            <dialog id="my_modal_1" class="modal">
-                                <div class="modal-box">
-                                  <h3 class="text-lg font-bold">Hello!</h3>
-                                  <p class="py-4">Press ESC key or click the button below to close</p>
-                                  <div class="modal-action">
-                                    <form method="dialog">
-                                      <!-- if there is a button in form, it will close the modal -->
-                                      <button class="btn">Close</button>
-                                    </form>
-                                  </div>
-                                </div>
-                              </dialog>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="card card-compact bg-base-100 w-96 shadow-xl">
-                    <figure>
-                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                
+            </div>
+            <div class="container mx-auto mb-8 flex flex-col justify-center items-center">
+                <div class="card border-[1px] flex lg:flex-row justify-between items-center bg-base-100 w-11/12">
+                    <img class="w-full lg:w-1/2 p-8" src="assets/feni.png" alt="flood" />
+                    <div class="lg:pr-8 lg:pl-0 px-6 pt-0 lg:pt-8 xl:gap-6 card-body">
+                        <div class="flex justify-start">
+                            <button class="btn bg-[#111111]/500 p-3 pt-2 ">
+                                <img src="/assets/coin.png" alt="coin">
+                                <p class=" text-[#111111]/70 text-xs md:text-base font-normal ">500 BDT</p>
+                            </button>
+                        </div>
+                        <h2 class="card-title text-[#111111] text-base md:text-xl font-bold leading-none">Donate for Flood Relief in Feni,Bangladesh</h2>
+                        <p class="text-[#111111]/70 text-xs md:text-base font-light">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                        <div class="card-actions justify-start xl:mt-4">
+                            <input type="text" placeholder="Write Donation Amount" class="input input-bordered py-2 w-full rounded-lg text-sm lg:text-base font-light leading-none"/>
+                            <button
+                                class="btn bg-btn-color py-2 mt-1 w-full drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 rounded-lg font-semibold text-sm md:text-xl leading-none text-[#111111]" >
+                                Donate Now
+                            </button>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="card card-compact bg-base-100 w-96 shadow-xl">
-                    <figure>
-                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                
+            </div>
+            <div class="container mx-auto mb-8 flex flex-col justify-center items-center">
+                <div class="card border-[1px] flex lg:flex-row justify-between items-center bg-base-100 w-11/12">
+                    <img class="w-full lg:w-1/2 p-8" src="assets/quota-protest.png" alt="flood" />
+                    <div class="lg:pr-8 lg:pl-0 px-6 pt-0 lg:pt-8 xl:gap-6 card-body">
+                        <div class="flex justify-start">
+                            <button class="btn bg-[#111111]/500 p-3 pt-2 ">
+                                <img src="/assets/coin.png" alt="coin">
+                                <p class=" text-[#111111]/70 text-xs md:text-base font-normal ">500 BDT</p>
+                            </button>
+                        </div>
+                        <h2 class="card-title text-[#111111] text-base md:text-xl font-bold leading-none">Aid for Injured in the Quota Movement</h2>
+                        <p class="text-[#111111]/70 text-xs md:text-base font-light">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                        <div class="card-actions justify-start xl:mt-4">
+                            <input type="text" placeholder="Write Donation Amount" class="input input-bordered py-2 w-full rounded-lg text-sm lg:text-base font-light leading-none"/>
+                            <button
+                                class="btn bg-btn-color py-2 mt-1 w-full drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 rounded-lg font-semibold text-sm md:text-xl leading-none text-[#111111]" >
+                                Donate Now
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -128,7 +144,7 @@
         </section>
     </main>
     <footer>
-
+        <div class="bg-nav-color h-20 lg:h-28"></div>
     </footer>
 </body>
 
