@@ -50,13 +50,14 @@
                 </div>
                 <div class="navbar-center">
                     <div class="flex flex-row items-center">
-                        <img class="w-6 md:w-12 mr-1 md:mr-3" src="/assets/logo.png" alt="logo">
+                        <img class="w-6 md:w-12 mr-1 md:mr-3" src="./assets/logo.png" alt="logo">
                         <h3 class="text-[#111111] font-semibold text-sm md:text-xl leading-none">Donate Bangladesh</h3>
                     </div>
                 </div>
                 <div class="navbar-end w-auto md:w-1/2">
-                    <img class="w-6 md:w-auto" src="/assets/coin.png" alt="coin">
-                    <h3 class="text-[#111111]/70 font-medium text-sm md:text-xl text-left leading-none">5500 BDT</h3>
+                    <img class="w-6 md:w-auto" src="./assets/coin.png" alt="coin">
+                    <h3 id="total-balance"
+                        class="text-[#111111]/70 font-medium text-sm md:text-xl text-left leading-none">5500 BDT</h3>
                 </div>
             </div>
         </nav>
@@ -64,29 +65,32 @@
     </header>
     <main>
         <!-- donate/history start -->
-        <section class="sticky z-50 top-[105px]">
+        <section class="sticky z-50 top-[104px] md:top-[104.5px]">
             <div class=" backdrop-blur-sm pt-10 pb-8 mx-auto flex items-center justify-center">
-                <button
-                    class="btn bg-btn-color border-[1px] border-btn-color drop-shadow-none hover:bg-transparent hover:border-[#111111]/30 hover:text-[#111111]/70 px-8 py-3 mr-2 rounded-lg font-semibold text-xl leading-none text-[#111111]">
+                <button id="show-donate-section"
+                    class="btn bg-btn-color border-[1px] border-btn-color drop-shadow-none hover:bg-white hover:border-[#111111]/30 hover:text-[#111111]/70 px-8 py-3 mr-2 rounded-lg font-semibold text-xl leading-none text-[#111111]">
                     Donation
                 </button>
-                <button
-                    class="btn bg-transparent border-[1px] border-[#111111]/30 drop-shadow-none hover:bg-btn-color hover:border-btn-color hover:text-[#111111] focus:bg-btn-color focus:border-btn-color focus:text-[#111111] px-8 py-3 ml-2 rounded-lg font-medium text-xl leading-none text-[#111111]/70">
+                <button id="show-history-section"
+                    class="btn bg-white border-[1px] border-[#111111]/30 drop-shadow-none hover:bg-btn-color hover:border-btn-color hover:text-[#111111] focus:text-[#111111] px-8 py-3 ml-2 rounded-lg font-medium text-xl leading-none text-[#111111]/70">
                     History
                 </button>
             </div>
         </section>
         <!-- donate/history end -->
         <!-- donation start -->
-        <section class="py-4">
+        <section id="donate-section" class="py-4">
+            <!-- noakhali -->
             <div class="container mx-auto mb-8 flex flex-col justify-center items-center">
                 <div class="card border-[1px] flex lg:flex-row justify-between items-center bg-base-100 w-11/12">
-                    <img class="w-full lg:w-1/2 p-8" src="assets/noakhali.png" alt="flood" />
+                    <img class="w-full lg:w-1/2 p-8" src="./assets/noakhali.png" alt="flood" />
                     <div class="lg:pr-8 lg:pl-0 px-6 pt-0 lg:pt-8 xl:gap-6 card-body">
                         <div class="flex justify-start">
                             <button class="btn bg-[#111111]/500 p-3 pt-2 text">
-                                <img src="/assets/coin.png" alt="coin">
-                                <p class=" text-[#111111]/70 text-xs md:text-base font-normal ">500 BDT</p>
+                                <img src="./assets/coin.png" alt="coin">
+                                <p id="total-noakhali-donation"
+                                    class=" text-[#111111]/70 text-xs md:text-base font-normal ">500 BDT
+                                </p>
                             </button>
                         </div>
                         <h2 class="card-title text-[#111111] text-base md:text-xl font-bold leading-none">Donate for
@@ -97,26 +101,42 @@
                             difference. Please join us in supporting the relief efforts and making a positive impact on
                             the lives of those in need.</p>
                         <div class="card-actions justify-start xl:mt-4">
-                            <input type="text" placeholder="Write Donation Amount"
+                            <input id="input-noakhali-donation" type="number" placeholder="Write Donation Amount"
                                 class="input input-bordered py-2 w-full rounded-lg text-sm lg:text-base font-light leading-none" />
-                            <button
+                            <button id="noakhali-donation-btn" onclick="my_modal_1.showModal()"
                                 class="btn bg-btn-color py-2 mt-1 w-full drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 rounded-lg font-semibold text-sm md:text-xl leading-none text-[#111111]">
                                 Donate Now
                             </button>
-
+                            <dialog id="my_modal_1" class="modal">
+                                <div class="modal-box">
+                                    <div class="flex flex-col justify-center items-center">
+                                        <h3 class="text-2xl text-[#111111] font-bold mb-2">Congrats!</h3>
+                                        <img src="./assets/coin.png" alt="coin">
+                                        <p class="py-4 text-sm text-[#111111]/50 font-normal">You Have Donated For Humankind</p>
+                                        <h3 class="text-base text-[#111111] font-bold">Successfully</h3>
+                                    </div>
+                                    <div class="modal-action justify-center">
+                                        <form method="dialog">
+                                            <button class="btn text-[#111111]">Close Confirmation</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
                 </div>
-
             </div>
+            <!-- feni -->
             <div class="container mx-auto mb-8 flex flex-col justify-center items-center">
                 <div class="card border-[1px] flex lg:flex-row justify-between items-center bg-base-100 w-11/12">
-                    <img class="w-full lg:w-1/2 p-8" src="assets/feni.png" alt="flood" />
+                    <img class="w-full lg:w-1/2 p-8" src="./assets/feni.png" alt="flood" />
                     <div class="lg:pr-8 lg:pl-0 px-6 pt-0 lg:pt-8 xl:gap-6 card-body">
                         <div class="flex justify-start">
                             <button class="btn bg-[#111111]/500 p-3 pt-2 ">
-                                <img src="/assets/coin.png" alt="coin">
-                                <p class=" text-[#111111]/70 text-xs md:text-base font-normal ">500 BDT</p>
+                                <img src="./assets/coin.png" alt="coin">
+                                <p id="total-feni-donation"
+                                    class=" text-[#111111]/70 text-xs md:text-base font-normal ">500 BDT
+                                </p>
                             </button>
                         </div>
                         <h2 class="card-title text-[#111111] text-base md:text-xl font-bold leading-none">Donate for
@@ -127,27 +147,43 @@
                             affected by this calamity. Together, we can offer crucial support and help rebuild lives in
                             the aftermath of this disaster. Every contribution counts towards making a real difference.
                             Please consider donating today to assist those in urgent need.</p>
-                        <div class="card-actions justify-start xl:mt-4">
-                            <input type="text" placeholder="Write Donation Amount"
-                                class="input input-bordered py-2 w-full rounded-lg text-sm lg:text-base font-light leading-none" />
-                            <button
-                                class="btn bg-btn-color py-2 mt-1 w-full drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 rounded-lg font-semibold text-sm md:text-xl leading-none text-[#111111]">
-                                Donate Now
-                            </button>
-
-                        </div>
+                            <div class="card-actions justify-start xl:mt-4">
+                                <input id="input-feni-donation" type="number" placeholder="Write Donation Amount"
+                                    class="input input-bordered py-2 w-full rounded-lg text-sm lg:text-base font-light leading-none" />
+                                <button id="feni-donation-btn" onclick="my_modal_1.showModal()"
+                                    class="btn bg-btn-color py-2 mt-1 w-full drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 rounded-lg font-semibold text-sm md:text-xl leading-none text-[#111111]">
+                                    Donate Now
+                                </button>
+                                <dialog id="my_modal_1" class="modal">
+                                    <div class="modal-box">
+                                        <div class="flex flex-col justify-center items-center">
+                                            <h3 class="text-2xl text-[#111111] font-bold mb-2">Congrats!</h3>
+                                            <img src="./assets/coin.png" alt="coin">
+                                            <p class="py-4 text-sm text-[#111111]/50 font-normal">You Have Donated For Humankind</p>
+                                            <h3 class="text-base text-[#111111] font-bold">Successfully</h3>
+                                        </div>
+                                        <div class="modal-action justify-center">
+                                            <form method="dialog">
+                                                <button class="btn text-[#111111]">Close Confirmation</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
                     </div>
                 </div>
-
             </div>
+            <!-- quota -->
             <div class="container mx-auto mb-8 flex flex-col justify-center items-center">
                 <div class="card border-[1px] flex lg:flex-row justify-between items-center bg-base-100 w-11/12">
-                    <img class="w-full lg:w-1/2 p-8" src="assets/quota-protest.png" alt="flood" />
+                    <img class="w-full lg:w-1/2 p-8" src="./assets/quota-protest.png" alt="flood" />
                     <div class="lg:pr-8 lg:pl-0 px-6 pt-0 lg:pt-8 xl:gap-6 card-body">
                         <div class="flex justify-start">
                             <button class="btn bg-[#111111]/500 p-3 pt-2 ">
-                                <img src="/assets/coin.png" alt="coin">
-                                <p class=" text-[#111111]/70 text-xs md:text-base font-normal ">500 BDT</p>
+                                <img src="./assets/coin.png" alt="coin">
+                                <p id="total-quota-donation"
+                                    class=" text-[#111111]/70 text-xs md:text-base font-normal ">500 BDT
+                                </p>
                             </button>
                         </div>
                         <h2 class="card-title text-[#111111] text-base md:text-xl font-bold leading-none">Aid for
@@ -159,30 +195,55 @@
                             support they need during this challenging time. Every donation plays a vital role in
                             alleviating their suffering and aiding in their recovery. Please consider making a donation
                             to support these brave individuals in their time of need.</p>
-                        <div class="card-actions justify-start xl:mt-4">
-                            <input type="text" placeholder="Write Donation Amount"
-                                class="input input-bordered py-2 w-full rounded-lg text-sm lg:text-base font-light leading-none" />
-                            <button
-                                class="btn bg-btn-color py-2 mt-1 w-full drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 rounded-lg font-semibold text-sm md:text-xl leading-none text-[#111111]">
-                                Donate Now
-                            </button>
-                        </div>
+                            <div class="card-actions justify-start xl:mt-4">
+                                <input id="input-quota-donation" type="number" placeholder="Write Donation Amount"
+                                    class="input input-bordered py-2 w-full rounded-lg text-sm lg:text-base font-light leading-none" />
+                                <button id="quota-donation-btn" onclick="my_modal_1.showModal()"
+                                    class="btn bg-btn-color py-2 mt-1 w-full drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 rounded-lg font-semibold text-sm md:text-xl leading-none text-[#111111]">
+                                    Donate Now
+                                </button>
+                                <dialog id="my_modal_1" class="modal">
+                                    <div class="modal-box">
+                                        <div class="flex flex-col justify-center items-center">
+                                            <h3 class="text-2xl text-[#111111] font-bold mb-2">Congrats!</h3>
+                                            <img src="./assets/coin.png" alt="coin">
+                                            <p class="py-4 text-sm text-[#111111]/50 font-normal">You Have Donated For Humankind</p>
+                                            <h3 class="text-base text-[#111111] font-bold">Successfully</h3>
+                                        </div>
+                                        <div class="modal-action justify-center">
+                                            <form method="dialog">
+                                                <button class="btn text-[#111111]">Close Confirmation</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- donation end -->
+        <!-- history start -->
+        <section id="history-section" class="hidden container mx-auto min-h-screen">
+            <div id="history-container" class="flex flex-col justify-center items-center">
+
+            </div>
+        </section>
+        <!-- history end -->
     </main>
     <footer>
-        <div class="bg-nav-color mx-auto flex items-center h-20 lg:h-28">
-            <a class="container flex justify-center" href="/blog.html"></a>
+        <div class="bottom-0 bg-nav-color flex items-center h-20 lg:h-28">
+            <a class="container flex justify-center items-center" href="/blog.html">
                 <button
-                class="md:hidden btn bg-btn-color drop-shadow-none w-11/12 py-1 rounded-lg font-semibold text-sm  leading-none text-[#111111]">
-                Blog
-            </button>
+                    class="md:hidden btn bg-btn-color drop-shadow-none w-11/12 py-1 rounded-lg font-semibold text-sm  leading-none text-[#111111]">
+                    Blog
+                </button>
             </a>
         </div>
     </footer>
+    <script src="./js/donate-now.js"></script>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/features.js"></script>
 </body>
 
 </html>
