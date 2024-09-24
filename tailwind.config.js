@@ -5,7 +5,4 @@ module.exports = {
       extend: {},
     },
     plugins: [],
-    font: {
-        'font-1': "font",
-      }
   }

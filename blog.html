@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="!scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
+    <!-- icon -->
+    <link rel="shortcut icon" type="x-icon" href="./assets/logo.png">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,40 +27,192 @@
                         clifford: '#da373d',
                         'btn-color': '#B4F461',
                         'nav-color': '#F9F7F3',
-                    }
-                }
-            }
+                        'back-blur': 'blur(8px)',
+                    },
+                    animation: {
+                        shake: 'shake 0.8s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        shake: {
+                            '0%, 100%': { transform: 'translateX(0)' },
+                            '25%': { transform: 'rotate(15deg)' },
+                            '75%': { transform: 'rotate(-15deg)' },
+                        },
+                    },
+                },
+            },
         }
     </script>
 </head>
 
 <body class="lexend-font">
-    <header class=" sticky top-0 z-50">
-        <nav class="container bg-nav-color mx-auto py-5 px-6">
-            <div class="navbar">
-                <div class="navbar-start">
-                    <button class="btn bg-btn-color drop-shadow-none px-8 py-3 rounded-lg font-semibold text-xl leading-none text-[#111111]">
-                        Blog
-                    </button>
+    <header class="bg-nav-color sticky top-0 z-50">
+        <!-- nav start -->
+        <nav class="container  mx-auto py-5 px-6">
+            <div class="navbar justify-between">
+                <div class="hidden md:block navbar-start w-auto md:w-1/2">
+                    <a href="/index.html">
+                        <button
+                            class="btn bg-btn-color drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 px-6 py-3 rounded-lg font-semibold text-xl leading-none text-[#111111]">
+                            Home
+                        </button>
+                    </a>
                 </div>
                 <div class="navbar-center">
                     <div class="flex flex-row items-center">
-                        <img class="w-12 mr-3" src="/assets/logo.png" alt="logo">
-                        <h3 class="text-[#111111] font-semibold text-xl leading-none">Donate Bangladesh</h3>
+                        <img class="w-6 md:w-12 mr-1 md:mr-3" src="/assets/logo.png" alt="logo">
+                        <h3 class="text-[#111111] font-semibold text-sm md:text-xl leading-none">Donate Bangladesh</h3>
                     </div>
                 </div>
-                <div class="navbar-end">
-                    <img src="/assets/coin.png" alt="coin">
-                    <h3 class="text-[#111111]/70 font-medium text-xl leading-none">5500 BDT</h3>
+                <div class="navbar-end w-auto md:w-1/2">
+                    <img class="w-6 md:w-auto" src="/assets/coin.png" alt="coin">
+                    <h3 class="text-[#111111]/70 font-medium text-sm md:text-xl text-left leading-none">5500 BDT</h3>
                 </div>
             </div>
         </nav>
+        <!-- nav end -->
     </header>
     <main>
-
+        <!-- introduction start -->
+        <section class="container mx-auto">
+            <div class="py-10 px-8 flex">
+                <h2 class="text-3xl text-[#111111] font-semibold">Important FAQ</h2>
+                <img class="w-10 ml-1 mb-1 animate-shake" src="./assets/bubble.png" alt="img">
+            </div>
+        </section>
+        <!-- introduction end -->
+        <!-- accordion start -->
+        <section class="container mx-auto pb-10 px-6 md:px-8">
+            <div class="join join-vertical w-full">
+                <!-- item-1-start -->
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-xl text-[#111111] font-bold">What is the Document Object Model
+                        (DOM)?</div>
+                    <div class="collapse-content">
+                        <p class="text-base text-[#111111]/75 font-normal">
+                            The Document Object Model (DOM) is a structured representation of a webpage's content,
+                            created by the browser when it loads an HTML document. It organizes the elements,
+                            attributes, and text of the webpage into a hierarchical tree structure, where each part of
+                            the document is a node. This structure allows developers to interact with the page using
+                            programming languages like JavaScript, treating every element as an object. Through the DOM,
+                            developers can dynamically modify content, alter the structure, or change the styling of
+                            elements in real-time. The DOM is a cross-platform and language-independent interface,
+                            making it a fundamental tool for creating interactive and responsive web pages. For
+                            instance, JavaScript can be used to add, remove, or update elements, handle user actions
+                            like clicks, or apply new CSS styles, allowing for a rich and dynamic user experience.</p>
+                    </div>
+                </div>
+                <!-- item-1-end -->
+                <!-- item-2-start -->
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl text-[#111111] font-bold">How do you select an element from the
+                        DOM?</div>
+                    <div class="collapse-content">
+                        <p class="text-base text-[#111111]/75 font-normal">Selecting an element from the DOM (Document
+                            Object Model) in JavaScript can be accomplished using several methods provided by the DOM
+                            API. The <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.getElementById()</span> method allows you to select an element by its unique ID.
+                            Alternatively, 
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.getElementsByClassName()</span>
+                             can be used to select elements with a
+                            specific class name, returning a live HTMLCollection. The 
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.getElementsByTagName()</span> 
+                            method selects elements based on their tag name, also returning a live HTMLCollection. For
+                            more modern approaches, <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.querySelector()</span>
+                             selects the first element that matches a
+                            specified CSS selector, while <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.querySelectorAll()</span>
+                             selects all elements that match a
+                            given CSS selector, returning a NodeList. Additionally, you can use 
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.children</span>
+                             to
+                            select all child elements of a specific element. Each method has its use cases:
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">getElementById()</span>
+                             is ideal for selecting a single, unique element, while 
+                             <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">getElementsByClassName()</span>
+                             and 
+                             <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">getElementsByTagName()</span>
+                              are useful for selecting multiple
+                            elements. In contrast, 
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">querySelector()</span>
+                              and 
+                              <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">querySelectorAll() </span>
+                               provide flexibility for more
+                            complex selections based on CSS selectors.</p>
+                    </div>
+                </div>
+                <!-- item-2-end -->
+                <!-- item-3-start -->
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl text-[#111111] font-bold">What is event delegation in the context
+                        of the DOM and why is it useful?</div>
+                    <div class="collapse-content">
+                        <p class="text-base text-[#111111]/75 font-normal">
+                            Event delegation is a technique in the
+                            context of the DOM (Document Object Model) that
+                            involves attaching a single event listener to a parent element instead of adding individual
+                            event listeners to each child element. This approach leverages the event bubbling mechanism,
+                            where events propagate from the target element up to its ancestor elements. By adding a
+                            listener to a parent element, such as a
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">&lt;ul&gt;</span>
+                            or
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">&lt;div&gt;</span>
+                            , which contains multiple child elements (like
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">&lt;li&gt;</span>
+                            or buttons), the listener can determine which child element triggered the event by examining
+                            the
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">event.target</span>
+                            property. This method is particularly useful for elements that may be added
+                            or removed dynamically, as the parent listener remains active regardless of changes to the
+                            child elements. Event delegation offers several advantages: it improves performance by
+                            reducing memory usage, simplifies code by eliminating redundancy, effectively manages
+                            dynamic content, and makes maintenance easier since any changes to the event handling logic
+                            only need to be made in one place. Overall, event delegation is a powerful technique that
+                            enhances efficiency and flexibility in handling events within the DOM.
+                        </p>
+                    </div>
+                </div>
+                <!-- item-3-end -->
+                <!-- item-4-start -->
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl text-[#111111] font-bold">How do you manipulate an element's
+                        attributes and styles using the DOM?</div>
+                    <div class="collapse-content">
+                        <p class="text-base text-[#111111]/75 font-normal">
+                            Manipulating an element's attributes and styles using the DOM (Document Object Model) can be accomplished through various methods provided by JavaScript. To change an element's attributes, you can use the 
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">setAttribute()</span> 
+                            method, which allows you to define a new value for a specified attribute, or the 
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">getAttribute()</span> 
+                            method to retrieve the current value of an attribute. For example, you can modify an image's src attribute by using 
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">element.setAttribute ('src', 'newImage.png')</span>
+                            . Additionally, you can directly access and modify specific attributes as properties of the element, such as 
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">element.id</span>
+                             or 
+                             <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">element.className</span>
+                             . When it comes to styles, you can manipulate an element's CSS properties through the <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">style</span>
+                              property of the element. For instance, you can change the background color of a div with 
+                             <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">element.style.backgroundColor = 'blue'</span>
+                             . Alternatively, you can also use the 
+                             <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">classList</span>
+                              property to add, remove, or toggle CSS classes, allowing for more complex styling changes. Overall, these methods provide a robust way to dynamically adjust the attributes and styles of elements in the DOM, enhancing interactivity and responsiveness on web pages.</p>
+                    </div>
+                </div>
+                <!-- item-4-end -->
+            </div>
+        </section>
+        <!-- accordion end -->
     </main>
     <footer>
-
+        <div class="bg-nav-color mx-auto flex items-center h-20 lg:h-28">
+            <a class="container flex justify-center" href="/index.html">
+                <button
+                    class="md:hidden btn bg-btn-color drop-shadow-none w-11/12 py-1 rounded-lg font-semibold text-sm  leading-none text-[#111111]">
+                    Home
+                </button>
+            </a>
+        </div>
     </footer>
 </body>
 
