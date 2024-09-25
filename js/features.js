@@ -5,7 +5,7 @@ document.getElementById("show-donate-section")
 
     document.getElementById('show-history-section').setAttribute('class', 'btn bg-white border-[1px] border-[#111111]/30 drop-shadow-none hover:bg-amber-300/70 hover:border-amber-300/30 hover:text-[#111111] ease-in-out duration-500 delay-100  focus:text-[#111111] ease-in-out delay-100 px-8 py-3 mr-2 ml-2 rounded-lg font-medium text-xl leading-none text-[#111111]/70');
 
-    window.scrollTo({ top: 0 });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
 document.getElementById("show-history-section")
@@ -15,7 +15,7 @@ document.getElementById("show-history-section")
 
     document.getElementById('show-donate-section').setAttribute('class', 'btn bg-white border-[1px] border-[#111111]/30 drop-shadow-none hover:bg-amber-300/70 hover:border-amber-300/30 hover:text-[#111111] ease-in-out duration-500 delay-100  focus:text-[#111111] ease-in-out delay-100 px-8 py-3 mr-2 ml-2 rounded-lg font-medium text-xl leading-none text-[#111111]/70');
 
-    window.scrollTo({ top: 0 });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
 document.getElementById("blog-link")
