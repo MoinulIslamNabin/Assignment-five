@@ -51,10 +51,12 @@
         <nav class="container  mx-auto py-5 px-6">
             <div class="navbar justify-between">
                 <div class="hidden md:block navbar-start w-auto md:w-1/2">
-                    <button id="home-link"
-                            class="btn bg-btn-color drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 px-6 py-3 rounded-lg font-semibold text-xl leading-none text-[#111111]">
-                            Home
-                        </button>
+                    <a href="https://moinulislamnabin.github.io/Assignment-five/">
+                        <button id="home-link"
+                        class="btn bg-btn-color drop-shadow-none hover:bg-transparent hover:border-[1px] hover:border-[#111111]/30 hover:text-[#111111]/70 px-6 py-3 rounded-lg font-semibold text-xl leading-none text-[#111111]">
+                        Home
+                    </button>
+                    </a>
                 </div>
                 <div class="navbar-center">
                     <div class="flex flex-row items-center">
@@ -110,33 +112,41 @@
                     <div class="collapse-content">
                         <p class="text-base text-[#111111]/75 font-normal">Selecting an element from the DOM (Document
                             Object Model) in JavaScript can be accomplished using several methods provided by the DOM
-                            API. The <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.getElementById()</span> method allows you to select an element by its unique ID.
-                            Alternatively, 
-                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.getElementsByClassName()</span>
-                             can be used to select elements with a
-                            specific class name, returning a live HTMLCollection. The 
-                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.getElementsByTagName()</span> 
+                            API. The <span
+                                class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.getElementById()</span>
+                            method allows you to select an element by its unique ID.
+                            Alternatively,
+                            <span
+                                class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.getElementsByClassName()</span>
+                            can be used to select elements with a
+                            specific class name, returning a live HTMLCollection. The
+                            <span
+                                class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.getElementsByTagName()</span>
                             method selects elements based on their tag name, also returning a live HTMLCollection. For
-                            more modern approaches, <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.querySelector()</span>
-                             selects the first element that matches a
-                            specified CSS selector, while <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.querySelectorAll()</span>
-                             selects all elements that match a
-                            given CSS selector, returning a NodeList. Additionally, you can use 
+                            more modern approaches, <span
+                                class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.querySelector()</span>
+                            selects the first element that matches a
+                            specified CSS selector, while <span
+                                class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.querySelectorAll()</span>
+                            selects all elements that match a
+                            given CSS selector, returning a NodeList. Additionally, you can use
                             <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">document.children</span>
-                             to
+                            to
                             select all child elements of a specific element. Each method has its use cases:
                             <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">getElementById()</span>
-                             is ideal for selecting a single, unique element, while 
-                             <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">getElementsByClassName()</span>
-                             and 
-                             <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">getElementsByTagName()</span>
-                              are useful for selecting multiple
-                            elements. In contrast, 
+                            is ideal for selecting a single, unique element, while
+                            <span
+                                class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">getElementsByClassName()</span>
+                            and
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">getElementsByTagName()</span>
+                            are useful for selecting multiple
+                            elements. In contrast,
                             <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">querySelector()</span>
-                              and 
-                              <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">querySelectorAll() </span>
-                               provide flexibility for more
-                            complex selections based on CSS selectors.</p>
+                            and
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">querySelectorAll() </span>
+                            provide flexibility for more
+                            complex selections based on CSS selectors.
+                        </p>
                     </div>
                 </div>
                 <!-- item-2-end -->
@@ -179,22 +189,32 @@
                         attributes and styles using the DOM?</div>
                     <div class="collapse-content">
                         <p class="text-base text-[#111111]/75 font-normal">
-                            Manipulating an element's attributes and styles using the DOM (Document Object Model) can be accomplished through various methods provided by JavaScript. To change an element's attributes, you can use the 
-                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">setAttribute()</span> 
-                            method, which allows you to define a new value for a specified attribute, or the 
-                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">getAttribute()</span> 
-                            method to retrieve the current value of an attribute. For example, you can modify an image's src attribute by using 
-                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">element.setAttribute ('src', 'newImage.png')</span>
-                            . Additionally, you can directly access and modify specific attributes as properties of the element, such as 
+                            Manipulating an element's attributes and styles using the DOM (Document Object Model) can be
+                            accomplished through various methods provided by JavaScript. To change an element's
+                            attributes, you can use the
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">setAttribute()</span>
+                            method, which allows you to define a new value for a specified attribute, or the
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">getAttribute()</span>
+                            method to retrieve the current value of an attribute. For example, you can modify an image's
+                            src attribute by using
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">element.setAttribute ('src',
+                                'newImage.png')</span>
+                            . Additionally, you can directly access and modify specific attributes as properties of the
+                            element, such as
                             <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">element.id</span>
-                             or 
-                             <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">element.className</span>
-                             . When it comes to styles, you can manipulate an element's CSS properties through the <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">style</span>
-                              property of the element. For instance, you can change the background color of a div with 
-                             <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">element.style.backgroundColor = 'blue'</span>
-                             . Alternatively, you can also use the 
-                             <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">classList</span>
-                              property to add, remove, or toggle CSS classes, allowing for more complex styling changes. Overall, these methods provide a robust way to dynamically adjust the attributes and styles of elements in the DOM, enhancing interactivity and responsiveness on web pages.</p>
+                            or
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">element.className</span>
+                            . When it comes to styles, you can manipulate an element's CSS properties through the <span
+                                class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">style</span>
+                            property of the element. For instance, you can change the background color of a div with
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">element.style.backgroundColor
+                                = 'blue'</span>
+                            . Alternatively, you can also use the
+                            <span class="text-blue-600 bg-[#bbbbbb] rounded-lg px-1 py-0">classList</span>
+                            property to add, remove, or toggle CSS classes, allowing for more complex styling changes.
+                            Overall, these methods provide a robust way to dynamically adjust the attributes and styles
+                            of elements in the DOM, enhancing interactivity and responsiveness on web pages.
+                        </p>
                     </div>
                 </div>
                 <!-- item-4-end -->
@@ -205,10 +225,12 @@
     <footer>
         <div class="bg-nav-color mx-auto flex items-center h-20 lg:h-28">
             <div class="container flex justify-center">
-                <button id="home-link-foot"
-                class="md:hidden btn bg-btn-color drop-shadow-none w-11/12 py-1 rounded-lg font-semibold text-sm  leading-none text-[#111111]">
-                Home
-            </button>
+                <a href="https://moinulislamnabin.github.io/Assignment-five/">
+                    <button id="home-link-foot"
+                    class="md:hidden btn bg-btn-color drop-shadow-none w-11/12 py-1 rounded-lg font-semibold text-sm  leading-none text-[#111111]">
+                    Home
+                </button>
+                </a>
             </div>
         </div>
     </footer>

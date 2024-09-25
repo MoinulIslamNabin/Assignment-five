@@ -24,9 +24,11 @@ document.getElementById("blog-link-foot")
   });
 document.getElementById("home-link")
   .addEventListener("click", function () {
-  window.location.href = "/index.html";
+  // window.location.href = "https://moinulislamnabin.github.io/Assignment-five/";
+  window.location.assign('https://moinulislamnabin.github.io/Assignment-five/');
 });
 document.getElementById("home-link-foot")
   .addEventListener("click", function () {
-  window.location.href = "/index.html";
+  // window.location.href = "https://moinulislamnabin.github.io/Assignment-five/";
+  window.location.assign('https://moinulislamnabin.github.io/Assignment-five/');
   });
