@@ -21,36 +21,13 @@ function showSectionById(id) {
 }
 
 // button
-function btnColor(id) {
-  document
-    .getElementById("show-donate-section")
-    .classList.remove("bg-btn-color");
-  document
-    .getElementById("show-donate-section")
-    .classList.remove("border-btn-color");
-  document.getElementById("show-donate-section").classList.remove("bg-white");
-  document
-    .getElementById("show-donate-section")
-    .classList.remove("border-[#111111]/30");
-  document
-    .getElementById("show-donate-section")
-    .classList.remove("hover:bg-white");
-  document
-    .getElementById("show-donate-section")
-    .classList.remove("hover:border-[#111111]/30");
-  document
-    .getElementById("show-donate-section")
-    .classList.remove("hover:bg-btn-color");
-  document
-    .getElementById("show-donate-section")
-    .classList.remove("hover:border-btn-color");
 
-  document.getElementById(id).classList.add("bg-btn-color");
-  document.getElementById(id).classList.add("border-btn-color");
-  document.getElementById(id).classList.add("hover:bg-white");
-  document.getElementById(id).classList.add("hover:border-[#111111]/30");
+function btnColor(id) {
+  document.getElementById("show-donate-section").removeAttribute("class");
+  document.getElementById("show-history-section").removeAttribute("class");
+
+  document.getElementById(id).setAttribute('class', 'btn bg-btn-color border-[1px] border-btn-color drop-shadow-none hover:bg-amber-300/70 hover:border-amber-300/30 ease-in-out duration-500 delay-100 px-8 py-3 ml-2 mr-2 rounded-lg font-semibold text-xl leading-none text-[#111111]')
 }
 
-// modal
 
 

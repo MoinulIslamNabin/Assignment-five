@@ -66,11 +66,11 @@
         <section class="sticky z-50 top-[104px] md:top-[104.5px]">
             <div class=" backdrop-blur-sm pt-10 pb-8 mx-auto flex items-center justify-center">
                 <button id="show-donate-section"
-                    class="btn bg-btn-color border-[1px] border-btn-color drop-shadow-none hover:bg-white hover:border-[#111111]/30 hover:text-[#111111]/70 px-8 py-3 mr-2 rounded-lg font-semibold text-xl leading-none text-[#111111]">
+                    class="btn bg-btn-color border-[1px] border-btn-color drop-shadow-none hover:bg-amber-300/70 hover:border-amber-300/30 ease-in-out duration-500 delay-100 px-8 py-3 mr-2 rounded-lg font-semibold text-xl leading-none text-[#111111]">
                     Donation
                 </button>
                 <button id="show-history-section"
-                    class="btn bg-white border-[1px] border-[#111111]/30 drop-shadow-none hover:bg-btn-color hover:border-btn-color hover:text-[#111111] focus:text-[#111111] px-8 py-3 ml-2 rounded-lg font-medium text-xl leading-none text-[#111111]/70">
+                    class="btn bg-white border-[1px] border-[#111111]/30 drop-shadow-none hover:bg-amber-300/70 hover:border-amber-300/30 hover:text-[#111111] ease-in-out duration-500 delay-100 focus:text-[#111111] px-8 py-3 ml-2 rounded-lg font-medium text-xl leading-none text-[#111111]/70">
                     History
                 </button>
             </div>
@@ -231,17 +231,17 @@
     </main>
     <footer>
         <div class="bottom-0 bg-nav-color flex items-center h-20 lg:h-28">
-            <a class="container flex justify-center items-center" href="/blog.html">
-                <button
-                    class="md:hidden btn bg-btn-color drop-shadow-none w-11/12 py-1 rounded-lg font-semibold text-sm  leading-none text-[#111111]">
-                    Blog
-                </button>
-            </a>
+            <div class="container flex justify-center items-center">
+                <button id="blog-link-foot"
+                class="md:hidden btn bg-btn-color drop-shadow-none w-11/12 py-1 rounded-lg font-semibold text-sm  leading-none text-[#111111]">
+                Blog
+            </button>
+            </div>
         </div>
     </footer>
+    <script src="./js/features.js"></script>
     <script src="./js/donate-now.js"></script>
     <script src="./js/utilities.js"></script>
-    <script src="./js/features.js"></script>
 </body>
 
 </html>

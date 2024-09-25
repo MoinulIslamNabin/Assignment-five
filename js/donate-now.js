@@ -5,17 +5,17 @@ document
     const totalNoakhaliDonation = getTextValueById("total-noakhali-donation");
     const balance = getTextValueById("total-balance");
 
-    if (isNaN(noakhaliDonation) || noakhaliDonation < 0) {
+    if (isNaN(noakhaliDonation) || noakhaliDonation <= 0) {
       alert("failed to make donation: invalid input");
       document.getElementById("input-noakhali-donation").value = "";
-      //   const modal = document.getElementById("my_modal_1");
-      //   modal.remove();
+
       const modalClose = document.getElementById("my_modal_1-close");
       modalClose.click();
       return;
     } else if (noakhaliDonation > balance) {
       alert("Insufficient balance, please donate a lower amount.");
       document.getElementById("input-noakhali-donation").value = "";
+
       const modalClose = document.getElementById("my_modal_1-close");
       modalClose.click();
       return;
@@ -57,15 +57,17 @@ document
     const totalFeniDonation = getTextValueById("total-feni-donation");
     const balance = getTextValueById("total-balance");
 
-    if (isNaN(feniDonation) || feniDonation < 0) {
+    if (isNaN(feniDonation) || feniDonation <= 0) {
       alert("failed to make donation: invalid input");
       document.getElementById("input-feni-donation").value = "";
+
       const modalClose = document.getElementById("my_modal_2-close");
       modalClose.click();
       return;
     } else if (feniDonation > balance) {
       alert("Insufficient balance, please donate a lower amount.");
       document.getElementById("input-feni-donation").value = "";
+
       const modalClose = document.getElementById("my_modal_2-close");
       modalClose.click();
       return;
@@ -107,15 +109,17 @@ document
     const totalQuotaDonation = getTextValueById("total-quota-donation");
     const balance = getTextValueById("total-balance");
 
-    if (isNaN(quotaDonation) || quotaDonation < 0) {
+    if (isNaN(quotaDonation) || quotaDonation <= 0) {
       alert("failed to make donation: invalid input");
       document.getElementById("input-quota-donation").value = "";
+
       const modalClose = document.getElementById("my_modal_3-close");
       modalClose.click();
       return;
     } else if (quotaDonation > balance) {
       alert("Insufficient balance, please donate a lower amount.");
       document.getElementById("input-quota-donation").value = "";
+
       const modalClose = document.getElementById("my_modal_3-close");
       modalClose.click();
       return;
