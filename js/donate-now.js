@@ -8,14 +8,16 @@ document
     if (isNaN(noakhaliDonation) || noakhaliDonation < 0) {
       alert("failed to make donation: invalid input");
       document.getElementById("input-noakhali-donation").value = "";
-      const modal = document.getElementById("my_modal_1");
-      modal.remove();
+      //   const modal = document.getElementById("my_modal_1");
+      //   modal.remove();
+      const modalClose = document.getElementById("my_modal_1-close");
+      modalClose.click();
       return;
     } else if (noakhaliDonation > balance) {
       alert("Insufficient balance, please donate a lower amount.");
       document.getElementById("input-noakhali-donation").value = "";
-      const modalHide = document.getElementById("my_modal_1");
-      modalHide.remove();
+      const modalClose = document.getElementById("my_modal_1-close");
+      modalClose.click();
       return;
     } else {
       const newTotalNoakhaliDonation = totalNoakhaliDonation + noakhaliDonation;
@@ -26,7 +28,6 @@ document
       document.getElementById("total-balance").innerText = newBalance;
 
       document.getElementById("input-noakhali-donation").value = "";
-      
 
       const time = new Date();
       const donationTime = time.toLocaleString();
@@ -59,14 +60,14 @@ document
     if (isNaN(feniDonation) || feniDonation < 0) {
       alert("failed to make donation: invalid input");
       document.getElementById("input-feni-donation").value = "";
-      const modalHide = document.getElementById("my_modal_1");
-      modalHide.remove();
+      const modalClose = document.getElementById("my_modal_2-close");
+      modalClose.click();
       return;
     } else if (feniDonation > balance) {
       alert("Insufficient balance, please donate a lower amount.");
       document.getElementById("input-feni-donation").value = "";
-      const modalHide = document.getElementById("my_modal_1");
-      modalHide.remove();
+      const modalClose = document.getElementById("my_modal_2-close");
+      modalClose.click();
       return;
     } else {
       const newTotalFeniDonation = totalFeniDonation + feniDonation;
@@ -109,14 +110,14 @@ document
     if (isNaN(quotaDonation) || quotaDonation < 0) {
       alert("failed to make donation: invalid input");
       document.getElementById("input-quota-donation").value = "";
-      const modalHide = document.getElementById("my_modal_1");
-      modalHide.remove();
+      const modalClose = document.getElementById("my_modal_3-close");
+      modalClose.click();
       return;
     } else if (quotaDonation > balance) {
       alert("Insufficient balance, please donate a lower amount.");
       document.getElementById("input-quota-donation").value = "";
-      const modalHide = document.getElementById("my_modal_1");
-      modalHide.remove();
+      const modalClose = document.getElementById("my_modal_3-close");
+      modalClose.click();
       return;
     } else {
       const newTotalQuotaDonation = totalQuotaDonation + quotaDonation;
