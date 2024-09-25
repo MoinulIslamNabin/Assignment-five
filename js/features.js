@@ -20,19 +20,17 @@ document.getElementById("show-history-section")
 
 document.getElementById("blog-link")
   .addEventListener("click", function () {
-  window.location.href = "/blog.html";
+  window.location.href = "https://moinulislamnabin.github.io/Assignment-five/blog";
 });
 document.getElementById("blog-link-foot")
   .addEventListener("click", function () {
-  window.location.href = "/blog.html";
+  window.location.href = "https://moinulislamnabin.github.io/Assignment-five/blog";
   });
 document.getElementById("home-link")
   .addEventListener("click", function () {
-  // window.location.href = "https://moinulislamnabin.github.io/Assignment-five/";
-  window.location.assign('https://moinulislamnabin.github.io/Assignment-five/');
+  window.location.href = "https://moinulislamnabin.github.io/Assignment-five/";
 });
 document.getElementById("home-link-foot")
   .addEventListener("click", function () {
-  // window.location.href = "https://moinulislamnabin.github.io/Assignment-five/";
-  window.location.assign('https://moinulislamnabin.github.io/Assignment-five/');
+  window.location.href = "https://moinulislamnabin.github.io/Assignment-five/";
   });
